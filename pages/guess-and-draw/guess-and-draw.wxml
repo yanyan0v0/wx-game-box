@@ -1,0 +1,19 @@
+<view>
+  <view>
+    <text>你画我猜</text>
+  </view>
+  <view>
+    <canvas
+      type="2d"
+      id="canvasId"
+      canvas-id="canvasId"
+      bindtouchstart='touchStart' 
+      bindtouchmove='touchMove' 
+      bindtouchend='touchEnd'
+      binderror="drawError"
+      disable-scroll='true'
+      class="draw-canvas"
+    ></canvas>
+
+  </view>
+</view>

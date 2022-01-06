@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="second-text">{{secondText}}</view>
+
+  <view class="container-rules">
+    <view>游戏规则：</view>
+    <view>1、当计时器开始后，点击“停止”按钮试计时器正好停止在“10.00”则视为挑战成功</view>
+  </view>
+
+  <view class="container-btns">
+    <button type="warn" bindtap="stop">停止</button>
+    <button type="primary" bindtap="start">开始</button>
+  </view>
+
+</view>

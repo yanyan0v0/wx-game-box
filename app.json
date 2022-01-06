@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/fly-bird/fly-bird",
+    "pages/2048/2048",
+    "pages/snake/snake",
+    "pages/guess-and-draw/guess-and-draw",
+    "pages/seconds/seconds"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

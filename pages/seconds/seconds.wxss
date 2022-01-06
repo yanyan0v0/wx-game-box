@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40rpx;
+}
+
+.second-text {
+  margin: 160rpx 0;
+  font-size: 64rpx;
+  text-align: center;
+}
+
+.container-btns {
+  margin: 160rpx 0;
+}
+
+.container-btns button {
+  margin: 10rpx;
+}

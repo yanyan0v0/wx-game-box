@@ -1,0 +1,22 @@
+.play-score {
+  margin: 20rpx 30rpx;
+}
+
+.play-ground__2048 {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  width: 172rpx;
+  height: 172rpx;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dddddd;
+}
+
+.ground-position {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  opacity: 0.5;
+}

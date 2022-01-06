@@ -1,0 +1,22 @@
+.play-score {
+  margin: 20rpx 30rpx;
+}
+
+.play-ground__box--pipe {
+  background-color: green;
+}
+
+.play-ground__box--bird {
+  background-color: yellow;
+}
+
+.play-ground__box--bird::after {
+  content: '';
+  width: 6rpx;
+  height: 6rpx;
+  border-radius: 50%;
+  background-color: #000000;
+  position: absolute;
+  top: 10rpx;
+  right: 8rpx;
+}

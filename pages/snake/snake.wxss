@@ -1,0 +1,33 @@
+.play-score {
+  margin: 20rpx 30rpx;
+}
+
+.play-ground__box--snake {
+  background-color: aqua;
+}
+
+.play-ground__box--snake-header::before {
+  content: '';
+  width: 6rpx;
+  height: 6rpx;
+  border-radius: 50%;
+  background-color: #000000;
+  position: absolute;
+  bottom: 10rpx;
+  left: 8rpx;
+}
+
+.play-ground__box--snake-header::after {
+  content: '';
+  width: 6rpx;
+  height: 6rpx;
+  border-radius: 50%;
+  background-color: #000000;
+  position: absolute;
+  top: 10rpx;
+  left: 8rpx;
+}
+
+.play-ground__box--fruit {
+  background-color: red;
+}

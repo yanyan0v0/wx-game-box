@@ -1,0 +1,33 @@
+{
+  "name": "game-box",
+  "version": "1.0.0",
+  "description": "微信游戏实验室",
+  "main": "app.js",
+  "scripts": {
+    "lint": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanyan0v0/game-box.git"
+  },
+  "keywords": [
+    "微信小程序",
+    "游戏"
+  ],
+  "author": "廖炎炎",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yanyan0v0/game-box/issues"
+  },
+  "homepage": "https://github.com/yanyan0v0/game-box#readme",
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
+    "standard": "^16.0.4"
+  },
+  "prettier": {
+    "semi": false
+  }
+}

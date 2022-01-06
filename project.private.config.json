@@ -1,0 +1,48 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/fly-bird/fly-bird",
+          "pathName": "pages/fly-bird/fly-bird",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/snake/snake",
+          "pathName": "pages/snake/snake",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/2048/2048",
+          "pathName": "pages/2048/2048",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/guess-and-draw/guess-and-draw",
+          "pathName": "pages/guess-and-draw/guess-and-draw",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "争分夺秒",
+          "pathName": "pages/seconds/seconds",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

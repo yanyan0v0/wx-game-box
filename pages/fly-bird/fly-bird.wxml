@@ -1,0 +1,25 @@
+<view class="container">
+  <view class="play-score">
+    <text>分数：</text>
+    <text>{{score}}</text>
+  </view>
+  <view class="play-ground">
+    <view class="play-ground__row" wx:for="{{renderGroundList}}" wx:for-item="row" wx:key="index">
+      <view class="play-ground__box {{col.isBird ? 'play-ground__box--bird' : ''}} {{col.isPipe ? 'play-ground__box--pipe' : ''}}" wx:for="{{row}}" wx:for-item="col" wx:key="index">
+      </view>
+    </view>
+    <view class="player-bird"></view>
+  </view>
+  <view>
+    <view><button bindtap="changeDirection" data-direction="top">上</button></view>
+    <view class="play-direction__btns">
+      <button bindtap="changeDirection" data-direction="left">左</button>
+      <button bindtap="changeDirection" data-direction="right">右</button>
+    </view>
+    <view><button bindtap="changeDirection" data-direction="bottom">下</button></view>
+  </view>
+  <view class="play-direction__btns">
+    <button type="primary" bindtap="{{isStop ? 'restoreGame' : 'stopGame'}}">{{isStop ? '恢复' : '暂停'}}</button>
+    <button type="primary" bindtap="restart">重新开始</button>
+  </view>
+</view>

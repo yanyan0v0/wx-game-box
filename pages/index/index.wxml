@@ -1,0 +1,5 @@
+<view class="container">
+  <navigator url="/pages/snake/snake">贪吃蛇</navigator>
+  <navigator url="/pages/fly-bird/fly-bird">Fly Bird</navigator>
+  <navigator url="/pages/2048/2048">2048</navigator>
+</view>

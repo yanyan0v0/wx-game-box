@@ -1,0 +1,32 @@
+<view class="container">
+  <view class="play-score">
+    <text>分数：</text>
+    <text>{{score}}</text>
+  </view>
+  <view class="play-score">
+    <text>速度：</text>
+    <text>{{1000 - speed}}</text>
+  </view>
+  <view class="play-ground">
+    <view class="play-ground__row" wx:for="{{renderGroundList}}" wx:for-item="row" wx:key="index">
+      <view class="play-ground__box {{col.isSnake ? 'play-ground__box--snake':''}} {{col.isSnakeHeader ? 'play-ground__box--snake-header':''}} {{col.isFruit ? 'play-ground__box--fruit':''}}" wx:for="{{row}}" wx:for-item="col" wx:key="index">
+      </view>
+    </view>
+  </view>
+  <view>
+    <view><button bindtap="changeDirection" data-direction="top">上</button></view>
+    <view class="play-direction__btns">
+      <button bindtap="changeDirection" data-direction="left">左</button>
+      <button bindtap="changeDirection" data-direction="right">右</button>
+    </view>
+    <view><button bindtap="changeDirection" data-direction="bottom">下</button></view>
+  </view>
+  <view class="play-direction__btns">
+      <button type="primary" bindtap="{{isStop ? 'restoreGame' : 'stopGame'}}">{{isStop ? '恢复' : '暂停'}}</button>
+      <button type="primary" bindtap="restart">重新开始</button>
+  </view>
+  <view class="play-direction__btns">
+    <button disabled="{{speed >= 800}}" bindtap="reduceSpeed">减速</button>
+    <button disabled="{{speed <= 200}}" bindtap="addSpeed">加速</button>
+  </view>
+</view>
