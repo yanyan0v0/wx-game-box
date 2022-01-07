@@ -1,5 +1,10 @@
 <view class="container">
-  <navigator url="/pages/snake/snake">贪吃蛇</navigator>
-  <navigator url="/pages/fly-bird/fly-bird">Fly Bird</navigator>
-  <navigator url="/pages/2048/2048">2048</navigator>
+  <view class="row">
+    <view wx:for="{{gameList}}" wx:for-item="row" wx:key="path" class="col">
+      <view wx:for="{{row}}" wx:for-item="col" wx:key="index" data-path="{{col.path}}" class="card" bindtap="toPage">
+        <image src="../../static/image/{{col.path}}.png"></image>
+        <navigator url="/pages/snake/snake">{{col.name}}</navigator>
+      </view>
+    </view>
+  </view>
 </view>

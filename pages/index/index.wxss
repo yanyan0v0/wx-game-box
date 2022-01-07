@@ -1,3 +1,22 @@
 .container {
   text-align: center;
+  padding: 20rpx;
+}
+
+.col {
+  display: flex;
+  margin-bottom: 20rpx;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 200rpx;
+  margin: 10rpx;
+  border-radius: 8rpx;
+}
+
+.card image {
+  width: 100%;
 }
