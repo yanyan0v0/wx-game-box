@@ -12,7 +12,7 @@
 }
 
 .container-btns {
-  margin: 160rpx 0;
+  margin: 160rpx auto;
 }
 
 .container-btns button {
