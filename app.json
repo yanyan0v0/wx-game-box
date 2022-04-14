@@ -5,7 +5,8 @@
     "pages/2048/2048",
     "pages/snake/snake",
     "pages/guess-and-draw/guess-and-draw",
-    "pages/seconds/seconds"
+    "pages/seconds/seconds",
+    "pages/mine-sweeping/mine-sweeping"
   ],
   "window": {
     "backgroundTextStyle": "light",

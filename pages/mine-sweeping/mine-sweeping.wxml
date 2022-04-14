@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="play-header">
+    <view>时间：{{second}}秒</view>
+    <view>总雷数：{{mineCount}}</view>
+    <view>已标记雷数：{{markMineCount}}</view>
+  </view>
+  <view class="play-ground">
+    <view class="play-ground__row" wx:for="{{renderGroundList}}" wx:for-item="row" wx:key="index">
+      <view class="play-ground__col {{col.showNum && col.mineNum === 0 ? 'play-ground__col--empty' : ''}}" wx:for="{{row}}" wx:for-item="col" wx:key="index" data-value="{{col.value}}" bindlongpress="setMineTag" bindtap="clearBox">
+        <image wx:if="{{col.mineTag}}" class="play-ground__col-boom" src="../../static/image/mine/mine.png"></image>
+        <image wx:if="{{!col.mineTag && col.isBoom && col.isMine}}" class="play-ground__col-boom" src="../../static/image/mine/boom.png"></image>
+        <text wx:if="{{col.showNum && col.mineNum}}" class="play-ground__col-num play-ground__col-num--{{col.mineNum}}">{{col.mineNum}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="play-direction__btns">
+    <button type="primary" bindtap="restart">重新开始</button>
+  </view>
+</view>

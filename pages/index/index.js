@@ -23,10 +23,10 @@ Page({
       ]
     ]
   },
-  toPage(e) {
+  toPage (e) {
     const { currentTarget: { dataset: { path } } } = e
     wx.navigateTo({
-      url: `/pages/${path}/${path}`,
+      url: `/pages/${path}/${path}`
     })
   }
-});
+})

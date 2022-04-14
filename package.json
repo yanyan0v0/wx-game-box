@@ -4,6 +4,7 @@
   "description": "微信游戏实验室",
   "main": "app.js",
   "scripts": {
+    "pretty": "prettier **/* --write --ignore-unknown",
     "lint": "eslint . --fix"
   },
   "repository": {
@@ -20,14 +21,29 @@
     "url": "https://github.com/yanyan0v0/game-box/issues"
   },
   "homepage": "https://github.com/yanyan0v0/game-box#readme",
+  "dependencies": {
+    "moment": "^2.29.1"
+  },
   "devDependencies": {
     "eslint": "^7.13.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.5.1",
-    "standard": "^16.0.4"
+    "husky": "^4.2.3",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts,wxss,less,wxml,html}": [
+      "prettier --check"
+    ],
+    "src/**/*.{js,ts}": [
+      "eslint --fix"
+    ]
   },
   "prettier": {
-    "semi": false
+    "semi": true
   }
 }

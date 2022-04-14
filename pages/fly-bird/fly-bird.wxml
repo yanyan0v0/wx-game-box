@@ -19,7 +19,6 @@
     <view><button bindtap="changeDirection" data-direction="bottom">下</button></view>
   </view>
   <view class="play-direction__btns">
-    <button type="primary" bindtap="{{isStop ? 'restoreGame' : 'stopGame'}}">{{isStop ? '恢复' : '暂停'}}</button>
     <button type="primary" bindtap="restart">重新开始</button>
   </view>
 </view>

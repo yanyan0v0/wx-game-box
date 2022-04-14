@@ -1,0 +1,53 @@
+.play-header {
+  padding: 30rpx;
+}
+
+.play-ground {
+  width: fit-content;
+  margin: 30rpx auto;
+}
+
+.play-ground__col {
+  width: 40rpx;
+  height: 40rpx;
+  background-color: #c9cfda;
+  text-align: center;
+  line-height: 40rpx;
+}
+
+.play-ground__col--empty {
+  background-color: #ffffff;
+}
+
+.play-ground__col-boom {
+  width: 100%;
+  height: 100%;
+}
+
+.play-ground__col-num {
+  font-weight: bold;
+}
+
+.play-ground__col-num--1 {
+  color: #3925e9;
+}
+
+.play-ground__col-num--2 {
+  color: #098fe9;
+}
+
+.play-ground__col-num--3 {
+  color: #e90f0f;
+}
+
+.play-ground__col-num--4 {
+  color: #cbf802;
+}
+
+.play-ground__col-num--5 {
+  color: #f30dae;
+}
+
+.play-ground__col-num--6 {
+  color: #e66007;
+}

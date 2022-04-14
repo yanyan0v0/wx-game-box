@@ -41,6 +41,13 @@
           "pathName": "pages/seconds/seconds",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "扫雷",
+          "pathName": "pages/mine-sweeping/mine-sweeping",
+          "query": "",
+          "scene": null,
+          "launchMode": "default"
         }
       ]
     }

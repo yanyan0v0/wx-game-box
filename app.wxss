@@ -4,17 +4,25 @@ page {
 
 .container {
   box-sizing: border-box;
+  padding: 30rpx;
   width: 100%;
   height: 100%;
 }
 
 .play-ground {
-  margin: 30rpx;
   border: 1px solid #dddddd;
 }
 
 .play-ground__row {
   display: flex;
+}
+
+.play-ground__row+.play-ground__row {
+  border-top: 1px solid #dddddd;
+}
+
+.play-ground__col+.play-ground__col {
+  border-left: 1px solid #dddddd;
 }
 
 .play-ground__box {
