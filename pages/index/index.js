@@ -21,6 +21,12 @@ Page({
           name: '争分夺秒',
         },
       ],
+      [
+        {
+          path: 'mine-sweeping',
+          name: '扫雷(简易版)',
+        },
+      ],
     ],
   },
   toPage(e) {
