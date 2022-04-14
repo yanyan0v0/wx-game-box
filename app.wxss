@@ -17,11 +17,11 @@ page {
   display: flex;
 }
 
-.play-ground__row+.play-ground__row {
+.play-ground__row + .play-ground__row {
   border-top: 1px solid #dddddd;
 }
 
-.play-ground__col+.play-ground__col {
+.play-ground__col + .play-ground__col {
   border-left: 1px solid #dddddd;
 }
 

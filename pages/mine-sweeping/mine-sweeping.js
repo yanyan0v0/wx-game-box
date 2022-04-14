@@ -75,11 +75,11 @@ Page({
     }
     // 从小到大排序
     this.minePosition.sort((a, b) => (a > b ? 1 : -1));
-    console.log("minePosition", this.minePosition);
+    console.log('minePosition', this.minePosition);
   },
   generateMineNum(groundList) {
-    groundList.forEach((row) => {
-      row.forEach((col) => {
+    groundList.forEach(row => {
+      row.forEach(col => {
         // 是雷则跳过
         if (col.isMine) {
           return;
@@ -107,11 +107,7 @@ Page({
       mineNum += 1;
     }
     // 右上 [i - 1][j + 1]
-    if (
-      groundList[i - 1] &&
-      groundList[i - 1][j + 1] &&
-      groundList[i - 1][j + 1].isMine
-    ) {
+    if (groundList[i - 1] && groundList[i - 1][j + 1] && groundList[i - 1][j + 1].isMine) {
       mineNum += 1;
     }
     // 右 [i][j + 1]
@@ -119,11 +115,7 @@ Page({
       mineNum += 1;
     }
     // 右下 [i + 1][j + 1]
-    if (
-      groundList[i + 1] &&
-      groundList[i + 1][j + 1] &&
-      groundList[i + 1][j + 1].isMine
-    ) {
+    if (groundList[i + 1] && groundList[i + 1][j + 1] && groundList[i + 1][j + 1].isMine) {
       mineNum += 1;
     }
     // 下 [i + 1][j]
@@ -131,11 +123,7 @@ Page({
       mineNum += 1;
     }
     // 左下 [i + 1][j - 1]
-    if (
-      groundList[i + 1] &&
-      groundList[i + 1][j - 1] &&
-      groundList[i + 1][j - 1].isMine
-    ) {
+    if (groundList[i + 1] && groundList[i + 1][j - 1] && groundList[i + 1][j - 1].isMine) {
       mineNum += 1;
     }
     // 左 [i][j - 1]
@@ -143,11 +131,7 @@ Page({
       mineNum += 1;
     }
     // 左上 [i - 1][j - 1]
-    if (
-      groundList[i - 1] &&
-      groundList[i - 1][j - 1] &&
-      groundList[i - 1][j - 1].isMine
-    ) {
+    if (groundList[i - 1] && groundList[i - 1][j - 1] && groundList[i - 1][j - 1].isMine) {
       mineNum += 1;
     }
     return mineNum;
